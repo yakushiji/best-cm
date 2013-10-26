@@ -1,4 +1,8 @@
 BestCm::Application.routes.draw do
+  root :to => 'cms#index'
+  resources :cms
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

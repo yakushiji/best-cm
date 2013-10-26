@@ -1,0 +1,15 @@
+.container
+  #main
+    .new
+      %h2 CM一覧
+      - @cms.each do |cm|
+        .movie
+          %ul
+            %li= raw(cm.url)
+            %li
+              .title
+                = cm.title
+
+    = link_to 'New Cm', new_cm_path
+  #side
+    tesuto 

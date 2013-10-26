@@ -1,0 +1,7 @@
+%p#notice= notice
+.container
+  %h2= @cm.title
+  .content
+    = raw(@cm.url)
+  = link_to 'Edit', edit_cm_path(@cm)
+  = link_to 'Back', cms_path
