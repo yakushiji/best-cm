@@ -1,0 +1,37 @@
+@import compass/reset
+@import compass/utilities
+
+body
+  background-image: image_url("topbar.jpg")
+  background-repeat: repeat-x
+  width: 960px
+  margin: 0 auto
+  padding: 30px 0
+  .container
+    padding: 30px 0px
+    #main
+      width: 640px
+      float: left
+      .new
+        h2
+          font-size: 30px
+          line-height: 1.5em
+      .movie
+        float: left
+        width: 300px
+        margin-right: 20px
+        +clearfix
+        ul
+          list-style-type: none
+          li
+            .title
+              height: 40px
+              overflow: hidden
+            iframe
+              width: 300px
+              height: 200px
+    #side
+      float: right
+      width: 300px
+  #footer
+    clear: both
